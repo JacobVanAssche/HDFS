@@ -1,24 +1,3 @@
-######################
-# Set up Hadoop user #
-######################
-#sudo adduser hadoopuser
-#sudo groupadd hadoopgroup
-#sudo usermod -g hadoopgroup hadoopuser
-# Edit visudo to give root access to hadoopuser
-#echo "hadoopuser ALL=(ALL) ALL" >> /etc/sudoers
-# Switch user to hadoopuser
-#su - hadoopuser
-
-######################
-#     Set up SSH     #
-######################
-#echo | ssh-keygen -t rsa -P ''
-#sudo chown hadoopuser ~/.ssh
-#sudo chmod 700 ~/.ssh
-#sudo chmod 600 ~/.ssh/id_rsa
-#sudo cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
-#sudo chmod 600 ~/.ssh/authorized_keys
-
 # Backup and replace sshd_config
 yes | cp /etc/ssh/sshd_config /etc/ssh/sshd_config-orig
 yes | mv sshd_config /etc/ssh/sshd_config
@@ -48,7 +27,7 @@ source ~/.bashrc
 curl -O http://apache.spinellicreations.com/hadoop/common/hadoop-2.2.0/hadoop-2.2.0.tar.gz
 tar -xzvf hadoop-2.2.0.tar.gz
 sudo mv hadoop-2.2.0 /usr/local/hadoop
-sudo chown -R hadoopuser:hadoopgroup /usr/local/hadoop
+
 # Create namenode and datanode folders
 mkdir -p ~/hadoopspace/hdfs/namenode
 mkdir -p ~/hadoopspace/hdfs/datanode
