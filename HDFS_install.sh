@@ -1,7 +1,3 @@
-# Backup and replace sshd_config
-yes | cp /etc/ssh/sshd_config /etc/ssh/sshd_config-orig
-yes | mv sshd_config /etc/ssh/sshd_config
-
 #######################
 #    Install Java     #
 #######################
