@@ -57,5 +57,4 @@ yes | mv hadoop-env.sh /usr/local/hadoop/etc/hadoop/hadoop-env.sh
 #    Start Hadoop     #
 #######################
 hdfs namenode -format
-start-dfs.sh
-start-yarn.sh
+hadoop-daeman.sh start namenode
