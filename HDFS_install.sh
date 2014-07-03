@@ -1,7 +1,7 @@
 #######################
 #    Install Java     #
 #######################
-yum install java-1.7.0-openjdk*
+yum -y install java-1.7.0-openjdk*
 
 # Edit ~/.bashrc
 echo "export JAVA_HOME=/usr/lib/jvm/jre-1.7.0-openjdk.x86_64/" >> ~/.bashrc
