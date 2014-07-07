@@ -20,9 +20,9 @@ source ~/.bashrc
 #######################
 #    Install Hadoop   #
 #######################
-curl -O http://apache.spinellicreations.com/hadoop/common/hadoop-2.2.0/hadoop-2.2.0.tar.gz
-tar -xzvf hadoop-2.2.0.tar.gz
-sudo mv hadoop-2.2.0 /usr/local/hadoop
+curl -O http://apache.spinellicreations.com/hadoop/common/hadoop-2.4.0/hadoop-2.4.0.tar.gz
+tar -xzvf hadoop-2.4.0.tar.gz
+sudo mv hadoop-2.4.0 /usr/local/hadoop
 
 # Create namenode and datanode folders
 mkdir -p ~/hadoopspace/hdfs/namenode
