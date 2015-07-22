@@ -20,7 +20,7 @@ source ~/.bashrc
 #######################
 #    Install Hadoop   #
 #######################
-curl -O http://apache.spinellicreations.com/hadoop/common/hadoop-2.4.0/hadoop-2.4.0.tar.gz
+curl -O https://archive.apache.org/dist/hadoop/core/hadoop-2.4.0/hadoop-2.4.0.tar.gz
 tar -xzvf hadoop-2.4.0.tar.gz
 sudo mv hadoop-2.4.0 /usr/local/hadoop
 
